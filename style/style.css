@@ -1,0 +1,194 @@
+.wrapper{
+	width: 100%;
+	margin: 0 auto;
+}
+header h1{
+	font-family: calibri;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	padding: 30px 0px 30px 0px;
+}
+.main{
+	float: right;
+	margin-right: 130px;
+	margin-bottom: 20px;
+
+}
+.uinp{
+	padding: 5px 55px 5px 0px;
+	margin-bottom: 10px;
+}
+.tiy{
+	text-align: right;
+	padding-right: 17px;
+}
+.content{
+	width: 80%;
+	margin: 0 auto;
+}
+.hidesec{
+	margin-left: 70px;
+	padding: 20px;
+}
+.content fieldset{
+	padding: 0 0 5% 0;
+}
+.content table{
+	margin: 5% 0 5% 5%;
+}
+th,td{
+	padding: 20px 86px 20px 22px;
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+	text-align: center;
+}
+th{
+	font-weight: bold;
+	font-size: 20px;
+	color: #000;
+	font-family: calibri;
+}
+.strike{
+	background: lightgrey;
+}
+.add1{
+	color: #fff;
+	background:  #5a88ca;
+	border: 0px;
+	margin-left: 145px;
+	padding: 15px;
+	border-radius: 5px;
+	float: left;
+	cursor: pointer;
+}
+.add2{
+	float: right;
+	text-decoration: none;
+	color: #000;
+	margin-right: 25px;
+	cursor: pointer;
+}
+.cancel{
+	color: #fff;
+	background: #4abebd;
+	border: 0px;
+	margin-left: 50px;
+	padding: 15px;
+	border-radius: 5px;
+	float: left;
+	cursor: pointer;
+}
+.clear{
+	clear: both;
+}
+td span{
+	cursor: pointer;
+	color: #4abebd;
+}
+.sea{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.field .ng-invalid {
+  background: lightyellow;
+}
+
+@media only screen and (max-width: 765px){
+	th,td{
+	padding: 15px;
+	}
+	.content table{
+		margin: 0%;
+	}
+	.cancel{
+		margin-left: 15px;
+	}
+	.add1{
+		margin-left: 5px;
+	}
+	.hidesec{
+	margin-left: 30px;
+	margin-bottom: 10px;
+	}
+	.uinp{
+	padding: 5px;
+	}
+	.tiy{
+	padding: 7px;
+	}
+	.content{
+		margin: 0;
+	}
+	.add2{
+		margin-right: 20px;
+	}
+}
+
+@media only screen and (min-width: 765px) and (max-width: 992px) {
+	th,td{
+	padding: 15px;
+	}
+	.content table{
+		margin: 0%;
+	}
+	.cancel{
+		margin-left: 35px;
+	}
+	.add1{
+		margin-left: 15px;
+	}
+	.hidesec{
+	margin-left: 90px;
+	margin-bottom: 10px;
+	}
+	.uinp{
+	padding: 5px 55px 5px 0px;
+	}
+	.tiy{
+	padding: 9px;
+	}
+	.content{
+		margin: 0 auto;
+	}
+	.add2{
+		margin-right: 80px;
+		margin-bottom: 10px;
+	}
+
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	th,td{
+	padding: 15px;
+	}
+	.content table{
+		margin: 0% 0% 0% 15%;
+	}
+	.cancel{
+		margin-left: 35px;
+	}
+	.add1{
+		margin-left: 15px;
+	}
+	.hidesec{
+	margin-left: 190px;
+	margin-bottom: 10px;
+	}
+	.uinp{
+	padding: 5px 55px 5px 0px;
+	}
+	.tiy{
+	padding: 9px;
+	}
+	.content{
+		margin: 0 auto;
+	}
+	.add2{
+		margin-right: 140px;
+		margin-bottom: 10px;
+	}
+
+}

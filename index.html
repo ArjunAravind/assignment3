@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignmnet1</title>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script> 
+	<script src="node_modules/angular-translate/dist/angular-translate.min.js"></script>
+	<script src="node_modules/angular-translate-loader-partial/angular-translate-loader-partial.min.js"></script>
+	 <script type="text/javascript" src="node_modules/angular-mocks/angular-mocks.js"></script> 
+	<script src="apps/app.js"></script>
+
+</head>
+<body ng-app="myApp" >
+	<section class="wrapper container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-controller="myCtrl">
+
+		<header>
+			<h1 translate="heading"></h1>
+			<div class="main">
+			<label translate="lang">Language:</label>
+			<select ng-change="lang(langu)" ng-model="langu">
+
+				<option value="en">English</option>
+				<option value="de">हिंदी</option>
+
+			</select>
+			</div>
+			<section class="clear"></section>
+		</header>
+
+		<section class="content" >
+
+
+		
+
+
+ 		<a href="#" ng-click="dispCon()"   class="add2" translate="pops"></a>
+ 		<section class="clear"></section>
+
+		<div class="coma col-xs-12">
+
+		<div class="sea">
+		<span translate="find"></span>
+		<input type="text" name="search" ng-model="q">
+		</div>
+
+        <table>
+        	<tr>
+				<th>#</th>
+				<th translate="id">Task ID</th>
+				<th translate="name">Task Name</th>
+				<th translate="mark">Mark Completed</th>
+				<th translate="remove">Remove Task</th>
+			</tr>
+
+            <tr ng-repeat="data in datas | filter:q" ng-class="{strike: check}" class="data-unchecked" required>
+            	<td>{{ $index+1 }}</td>
+                <td>{{data.id}}</td>
+                <td>{{data.name}}</td>
+                <td><input type="checkbox" name="ucheck" ng-model="check"></td>
+                <td>
+                    <span ng-click="toggleChecked($index)" translate="del"></span>
+                </td>
+            </tr>
+
+        </table>
+    	</div><!-- table entry ends -->
+
+
+
+		</section><!-- content ends -->
+
+	</section><!-- wrapper ends -->
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+	"heading":"My ToDo Application",
+	"lang":"Language",
+	"pops":"Add",
+	"find":"Search",
+	"id":"Task ID",
+	"name":"Task Name",
+	"mark":"Mark Completed",
+	"remove":"Remove Task",
+	"del":"remove"
+}

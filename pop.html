@@ -1,0 +1,28 @@
+
+<html>
+<head>
+
+</head>
+<body>
+<section class="hidesec"><!-- hidesec starts -->
+			<form name="myForm" class="field">
+		<fieldset>
+			<label class="tiy" translate="id">:</label>
+			<input type="text" name="tid" ng-model="assoId" class="uinp"  required>
+		</fieldset>
+
+		<fieldset>
+			<label translate="name">:</label>
+			<input type="text" name="tname" ng-model="assoName" class="uinp" >
+		</fieldset>
+		
+
+		<button ng-click="addData()" class="add1" ng-disabled="myForm.$invalid" translate="new"></button>
+		<button ng-click="removeData()" class="cancel" translate="crow"></button>
+		<section class="clear"></section>
+
+
+
+		</section><!-- hidesec ends -->
+</body>
+</html>
